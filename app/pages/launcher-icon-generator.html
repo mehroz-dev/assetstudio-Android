@@ -1,0 +1,24 @@
+---
+title: Launcher icon generator
+bodyClasses: page-launcher-icon-generator
+destination: /icons-launcher.html
+---
+
+{% extends '_generator-base.html' %}
+
+{% block banner %}
+<div class="page-header-banner">
+  <i class="material-icons">error</i>
+  <span>
+    This page is no longer maintained. <a href="https://icon.kitchen">Switch to IconKitchen</a>, the successor to the
+    Android Asset Studio.
+  </span>
+</div>
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<script>
+new pages.LauncherIconGenerator();
+</script>
+{% endblock %}
